@@ -13,8 +13,14 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
     integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
+  <!-- Jquery CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="assets/main.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+
+  <!-- Custom JS -->
+  <script src="assets/js/main.js"></script>
 
   <title>Hello, world!</title>
 </head>
@@ -45,19 +51,19 @@
         </ul>
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fas fa-phone-volume"></i>+62 21 1234 56</a>
+            <a class="nav-link" href="#"><i class="fas fa-phone-volume phone"></i>+62 21 1234 56</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fas fa-envelope"></i>info@syntax.com</a>
+            <a class="nav-link" href="#"><i class="fas fa-envelope email"></i>info@syntax.com</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Pricing</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Login</a>
+            <a class="nav-link" href="#" id="login">Login</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Sign Up</a>
+            <a class="nav-link" href="#" id="signup">Sign Up</a>
           </li>
         </ul>
       </div>
@@ -72,10 +78,10 @@
       <div class="row">
         <div class="col-lg-10 mx-auto">
           <form action="">
-            <div>
+            <div class="p-1 bg-light shadow-sm">
               <div class="input-group">
                 <input type="search" name="" id="" placeholder="Search for stock Images, Vectors & Videos"
-                  class="form-control">
+                  class="form-control border-0 bg-light">
                 <div class="input-group-append">
                   <!-- Example single danger button -->
                   <div class="btn-group">
@@ -84,11 +90,14 @@
                       All Images
                     </button>
                     <div class="dropdown-menu">
-                      <a class="dropdown-item" href="#"><i class="far fa-image"></i>Images</a>
-                      <a class="dropdown-item" href="#"><i class="fas fa-camera"></i>Photos</a>
-                      <a class="dropdown-item" href="#"><i class="fas fa-drafting-compass"></i>Vectors</a>
+                      <a class="dropdown-item" href="#"><i class="far fa-image mr-2"></i>Images</a>
+                      <a class="dropdown-item" href="#"><i class="fas fa-camera mr-2"></i>Photos</a>
+                      <a class="dropdown-item" href="#"><i class="fas fa-drafting-compass mr-2"></i>Vectors</a>
                       <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#"><i class="fas fa-video"></i>Videos</a>
+                      <a class="dropdown-item" href="#"><i class="fas fa-video mr-2"></i>Videos</a>
+                    </div>
+                    <div class="input-group-append">
+                      <button type="submit" class="btn btn-link"><i class="fas fa-search"></i></button>
                     </div>
                   </div>
                 </div>
@@ -118,12 +127,12 @@
       </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
+      <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span> -->
     </a>
     <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
+      <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span> -->
     </a>
   </div>
   <!-- Carousel end -->
